@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ExcessBaggageFee</string>
+    <string name="app_name">FareFly</string>
 
     <string-array name="ticket_classes">
         <item>Economy (20 kg)</item>

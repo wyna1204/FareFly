@@ -18,6 +18,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.core.view.GravityCompat;
+import android.content.Intent;
 
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
@@ -68,15 +69,29 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(v ->
                 drawerLayout.openDrawer(GravityCompat.START)
         );
+
         toolbar.setOnMenuItemClickListener(item -> {
             if (item.getItemId() == R.id.action_share) {
-                Toast.makeText(this,
-                        "Share link will be available after GitHub upload",
-                        Toast.LENGTH_SHORT).show();
+
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+
+                shareIntent.putExtra(
+                        Intent.EXTRA_TEXT,
+                        "Check out FareFly - Smart Baggage Fee Calculator!\n\n" +
+                                "https://github.com/wyna1204/FareFly"
+                );
+
+                startActivity(
+                        Intent.createChooser(shareIntent, "Share FareFly")
+                );
+
                 return true;
             }
+
             return false;
         });
+
 
         // Drawer menu selection
         navView.setNavigationItemSelectedListener(item -> {

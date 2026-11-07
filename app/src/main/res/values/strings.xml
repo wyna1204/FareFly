@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ExcessBaggageFee</string>
+
+    <string-array name="ticket_classes">
+        <item>Economy (20 kg)</item>
+        <item>Business (40 kg)</item>
+    </string-array>
+</resources>

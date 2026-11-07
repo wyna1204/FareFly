@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4EDFC">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/aboutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#6A2C91"
+        app:title="About FareFly"
+        app:titleTextColor="#FFFFFF"
+        app:navigationIcon="@android:drawable/ic_media_previous"
+        app:navigationIconTint="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✈"
+                android:textSize="55sp"
+                android:textColor="#6A2C91"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAREFLY"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#6A2C91"
+                android:letterSpacing="0.12"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pack Smart. Fly Light."
+                android:textSize="14sp"
+                android:textColor="#8B55B5"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ABOUT THE APPLICATION"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#6A2C91"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FareFly is a mobile application designed to estimate excess baggage fees for air travel. Users can calculate additional baggage charges based on baggage weight, ticket class and rate per kilogram. The application also includes an 8% service tax in the total calculation."
+                android:textSize="14sp"
+                android:textColor="#49345B"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DEVELOPER INFORMATION"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#6A2C91"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/tvStudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NUR AZWYN AZWEENA BINTI RAMLAN"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#49345B"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tvStudentId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student ID: 2024200286"
+                android:textSize="14sp"
+                android:textColor="#49345B"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Programme: Bachelor of Computer Science (Hons.) Netcentric Computing"
+                android:textSize="14sp"
+                android:textColor="#49345B"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="University: UiTM Perlis"
+                android:textSize="14sp"
+                android:textColor="#49345B"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WEBSITE"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#6A2C91"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/tvWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visit FareFly on GitHub"
+                android:textSize="14sp"
+                android:textColor="#8B55B5"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="© 2026 FareFly. All Rights Reserved."
+                android:textSize="12sp"
+                android:textColor="#8B55B5"
+                android:gravity="center"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

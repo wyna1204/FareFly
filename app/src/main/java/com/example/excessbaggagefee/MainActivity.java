@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
                 android.graphics.Color.parseColor("#6A2C91")
         );
 
+        androidx.core.view.WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
+
         setContentView(R.layout.activity_main);
 
         // Connect UI components
